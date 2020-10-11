@@ -19,7 +19,7 @@ app.use(cors());
 app.use(logger('dev'));
 
 //db connection
-var dbPath = "mongodb://localhost/helloDeskDB";
+var dbPath = "mongodb+srv://TicketSP:s3v68tlOm115r3WJ@cluster0.uok02.mongodb.net/MantenimientoDB?retryWrites=true&w=majority";
 mongoose.connect(dbPath);
 mongoose.connection.once('open',function(){
   console.log("Database Connection Established Successfully.");
